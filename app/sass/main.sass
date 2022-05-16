@@ -8326,7 +8326,7 @@ form
 	.main-window-content
 		@include media-breakpoint-down(md)
 			position: absolute
-			bottom: 0
+			top: rem(140px)
 			width: 100%
 
 .lai-advantages
@@ -9524,7 +9524,7 @@ form
 			width: 50%
 		@include media-breakpoint-down(xs)
 			width: auto
-			height: rem(189px)
+			height: rem(230px)
 			top: auto
 			bottom: 0
 		img
@@ -9543,6 +9543,8 @@ form
 		width: 100%
 		height: rem(378px)
 		margin-bottom: rem(25px)
+		@media screen and ( max-width: 480px  )
+			height: rem(280px)
 		@media screen and ( max-width: 400px  )
 			height: rem(156px)
 		img
