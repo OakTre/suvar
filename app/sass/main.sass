@@ -9814,6 +9814,8 @@ form
 			.company-news__content
 				top: 0
 				+tr
+				@include media-breakpoint-down(xs)
+					top: rem(250px)
 	&__item:nth-last-child(1)
 		margin-left: rem(-4px)
 	&__img
