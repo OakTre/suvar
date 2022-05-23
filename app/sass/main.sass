@@ -8519,6 +8519,32 @@ form
 			display: inline-block
 		@include media-breakpoint-down(sm)
 			margin-top: rem(20px)
+	&__select-wrapper
+		position: relative
+		.near__select
+			&::after
+				transition: transform 200ms
+			&.is-active
+				&::after
+					transform: translateY(-95%) rotate(180deg)
+	&__select-items
+		position: absolute
+		top: calc( 100% - 5px )
+		left: 0
+		z-index: 10
+		width: 100%
+		border-bottom-left-radius: 7px
+		border-bottom-right-radius: 7px
+		background: #fff
+		border: 1px solid rgba(23,23,35,.3)
+		border-top: none
+		display: none
+		.near__select
+			border: none
+			border-radius: 0
+			border-bottom: 1px solid rgba(23,23,35,.3)
+			&::after
+				content: none
 	&__select
 		width: rem(400px)
 		padding: rem(20px)
@@ -10247,10 +10273,12 @@ form
 		+tr
 	&__img
 		width: 100%
+		min-width: 0
 		height: 100%
 		img
-			width: 100%
+			width: auto
 			height: 100%
+			min-width: 0
 			object-fit: cover
 			object-position: top
 	&__desc
