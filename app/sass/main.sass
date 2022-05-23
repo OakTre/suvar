@@ -8529,20 +8529,31 @@ form
 					transform: translateY(-95%) rotate(180deg)
 	&__select-items
 		position: absolute
-		top: calc( 100% - 5px )
+		top: calc( 100% + 8px )
 		left: 0
 		z-index: 10
 		width: 100%
-		border-bottom-left-radius: 7px
-		border-bottom-right-radius: 7px
+		border-radius: 7px
 		background: #fff
-		border: 1px solid rgba(23,23,35,.3)
+		box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08)
 		border-top: none
+		padding: 16px
 		display: none
 		.near__select
 			border: none
-			border-radius: 0
-			border-bottom: 1px solid rgba(23,23,35,.3)
+			padding: 0
+			margin-bottom: 16px
+			color: #000
+			svg
+				fill: none
+				path
+					fill: #000000
+					opacity: 0.25
+			&.near__tab-active
+				svg
+					path
+						fill: #d90002
+						opacity: 1
 			&::after
 				content: none
 	&__select
