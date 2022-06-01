@@ -49,8 +49,6 @@ $(function () {
         });
     });
 
-
-
     let newsSlider2 = $('.news-slider-near-2').slick({
         slidesToShow: 3,
         slidesToScroll: 2,
@@ -2434,7 +2432,7 @@ $(function () {
         slidesToShow: 4,
         arrows: false,
         dots: false,
-        infinite: false,
+        infinite: true,
         responsive: [
             {
                 breakpoint: 1200,
