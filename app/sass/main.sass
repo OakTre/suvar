@@ -9914,6 +9914,8 @@ form
 		.stocks-nav
 			position: absolute
 			bottom: rem(10px)
+			@include media-breakpoint-down(lg)
+				display: none
 		@include media-breakpoint-down(md)
 			margin-bottom: rem(20px)
 	&__tabs
